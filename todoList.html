@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="todoList.css">
+
+    <title>TodoList</title>
+</head>
+<body>
+<div class="container-header">
+    <div class="header">
+        <h1>Your business for today</h1>
+    </div>
+    <div class="body">
+        <div class="add-task">
+            <form action="#">
+                <label for="add-task">Add task</label><br>
+                <input type="text" id="add-task" name="addTask" value=""><br>
+                <button type="button" id="add-button" onclick="addNewTask()">Add</button>
+            </form>
+        </div>
+        <div >
+            <label for="complete-all">Complete all</label>
+            <input id="complete-all" type="checkbox" onchange="completeAll(this)">
+        </div>
+    </div>
+</div>
+<div class="container-tasks">
+    <div id="tasks">
+    </div>
+    <div class="footer" id="count">
+    </div>
+</div>
+
+<script src="todoList.js"></script>
+</body>
+</html>
